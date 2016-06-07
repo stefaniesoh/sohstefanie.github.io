@@ -19,8 +19,6 @@
 
     <!-- CSS -->
     <link href="css/animate.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet">
-    <link href="color/default.css" rel="stylesheet">
 
    <!-- Virtual Reality Script -->
     <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
@@ -38,36 +36,44 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <h1>SQUAD FREE</h1>
+                    <h1>CONVRSE</h1>
                 </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#intro">CONVRSE</a></li>
-                <li><a href="#about">What</a></li>
-                <li><a href="#service">Why</a></li>
-                <li><a href="#contact">How</a></li>
-                <li><a href="#contact">Who</a></li>
-                <li><a href="#contact">Contact</a></li>
+              <ul class="nav nav-pills" role="tablist">
+                <li role="presentation" class="active">
+                  <a href="#welcome" aria-controls="welcome" role="tab" data-toggle="tab">Welcome</a>
+                </li>
+                <li role="presentation">
+                  <a href="#what" aria-controls="what" role="tab" data-toggle="tab">What</a>
+                </li>
+                <li role="presentation">
+                  <a href="#why" aria-controls="why" role="tab" data-toggle="tab">Why</a>
+                </li>
+                <li role="presentation">
+                  <a href="#how" aria-controls="how" role="tab" data-toggle="tab">How</a>
+                </li>
+                <li role="presentation">
+                  <a href="#who" aria-controls="who" role="tab" data-toggle="tab">Who</a>
+                </li>
+                <li role="presentation">
+                  <a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a>
+                </li>
               </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
 
         <!-- Section: intro -->
-        <section id="intro" class="intro">
-      
-        <div class="slogan">
-          <h2>Welcome to <span class="text_color">CONVRSE</span> </h2>
-          <h4>We use Virtual Reality to make your Customer Service more real.</h4>
-        </div>
-        <div class="page-scroll">
-          <a href="#service" class="btn btn-circle">
-            <i class="fa fa-angle-double-down animated"></i>
-          </a>
-        </div>
+        <section id="content" class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="welcome">Welcome is working</div>
+          <div role="tabpanel" class="tab-pane" id="what">What is showing</div>
+          <div role="tabpanel" class="tab-pane" id="why">why is showing</div>
+          <div role="tabpanel" class="tab-pane" id="how">How is showing</div>
+          <div role="tabpanel" class="tab-pane" id="who">Who is showing</div>
+          <div role="tabpanel" class="tab-pane" id="contact">Contact is showing</div>
         </section>
       <!-- /Section: intro -->
 
