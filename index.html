@@ -18,19 +18,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Monsterrat:400,700|Merriweather:400,300italic,700' rel='stylesheet' type='text/css'>
 
     <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="css/icomoon.css">
-    <!-- Magnific Popup-->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <!-- Bootstrap  -->
     <link rel="stylesheet" href="css/bootstrap.css">
-
-    <!-- Cards -->
-    <link rel="stylesheet" href="css/cards.css">
 
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
@@ -45,25 +33,75 @@
 
   </head>
   <body>
-    <a-scene>
-      <a-sky src="panorama-lady-talk.jpg" rotation="0 -130 0"></a-sky>
-    </a-scene>
-
-   <!-- Header & Menu -->
-    <section id="header"></section>
-
-   <!-- Content -->
    
+   <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <h1>CONVRSE</h1>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+              <ul id="convrseTabs" class="nav nav-pills" role="tablist">
+                <li role="presentation" class="active">
+                  <a href="#welcome" aria-controls="welcome" role="tab" data-toggle="tab">Welcome</a>
+                </li>
+                <li role="presentation">
+                  <a href="#what" aria-controls="what" role="tab" data-toggle="tab">What</a>
+                </li>
+                <li role="presentation">
+                  <a href="#why" aria-controls="why" role="tab" data-toggle="tab">Why</a>
+                </li>
+                <li role="presentation">
+                  <a href="#how" aria-controls="how" role="tab" data-toggle="tab">How</a>
+                </li>
+                <li role="presentation">
+                  <a href="#who" aria-controls="who" role="tab" data-toggle="tab">Who</a>
+                </li>
+                <li role="presentation">
+                  <a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+
+        <!-- Section: intro -->
+        <section id="content" class="tab-content">
+          <div role="tabpanel" class="tab-pane fade active" id="welcome">
+            <a-scene>
+              <a-sky src="panorama-lady-talk.jpg" rotation="0 -130 0"></a-sky>
+            </a-scene>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="what">What is showing</div>
+          <div role="tabpanel" class="tab-pane fade" id="why">why is showing</div>
+          <div role="tabpanel" class="tab-pane fade" id="how">How is showing</div>
+          <div role="tabpanel" class="tab-pane fade" id="who">Who is showing</div>
+          <div role="tabpanel" class="tab-pane fade" id="contact">Contact is showing</div>
+        </section>
+      <!-- /Section: intro -->
+
+      <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script> 
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/wow.min.js"></script>
 
 
-   <!-- Script -->
-  <script> 
-    $("#header").load("header.html");
-    $("#footer").load("footer.html");
-  </script> 
+     <!-- Script -->
+    <script> 
+    $('#convrseTabs a').click(function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+    </script> 
 
-   <!-- Footer -->
-    <section id="footer"></section>
 
   </body>
 </html>
