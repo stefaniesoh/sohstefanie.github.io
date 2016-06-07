@@ -1,9 +1,13 @@
+a-scene{
+    position: relative;
+}
 summary{
-	position: fixed;
+	position: absolute;
     top: 25%;
     left: 50%;
     width: 50%;
     height: auto;
     text-align: center;
     text-overflow: auto;
+    z-index: 8;
 }
