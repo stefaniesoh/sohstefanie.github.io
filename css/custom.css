@@ -3,9 +3,14 @@ summary{
 	position: fixed;
     top: 25%;
     left: 25%;
-    width: 75%;
+    width: 50%;
     height: auto;
     text-align: center;
     text-overflow: auto;
+    background: rgba(255,255,255,0.8);
+    padding: 20px;
+}
+
+summary h1, summary h2, summary p{
     color: white;
 }
