@@ -42,7 +42,7 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-              <ul class="nav nav-pills" role="tablist">
+              <ul id="convrseTabs" class="nav nav-pills" role="tablist">
                 <li role="presentation" class="active">
                   <a href="#welcome" aria-controls="welcome" role="tab" data-toggle="tab">Welcome</a>
                 </li>
@@ -68,15 +68,28 @@
 
         <!-- Section: intro -->
         <section id="content" class="tab-content">
-          <div role="tabpanel" class="tab-pane active" id="welcome">Welcome is working</div>
-          <div role="tabpanel" class="tab-pane" id="what">What is showing</div>
-          <div role="tabpanel" class="tab-pane" id="why">why is showing</div>
-          <div role="tabpanel" class="tab-pane" id="how">How is showing</div>
-          <div role="tabpanel" class="tab-pane" id="who">Who is showing</div>
-          <div role="tabpanel" class="tab-pane" id="contact">Contact is showing</div>
+          <div role="tabpanel" class="tab-pane fade active" id="welcome">Welcome is working</div>
+          <div role="tabpanel" class="tab-pane fade" id="what">What is showing</div>
+          <div role="tabpanel" class="tab-pane fade" id="why">why is showing</div>
+          <div role="tabpanel" class="tab-pane fade" id="how">How is showing</div>
+          <div role="tabpanel" class="tab-pane fade" id="who">Who is showing</div>
+          <div role="tabpanel" class="tab-pane fade" id="contact">Contact is showing</div>
         </section>
       <!-- /Section: intro -->
 
+      <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script> 
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/wow.min.js"></script>
 
+      <script type="text/javascript">
+        $('#convrseTabs a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+
+      </script>
   </body>
 </html>
