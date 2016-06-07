@@ -33,6 +33,10 @@
 
   </head>
   <body>
+
+  <a-scene>
+    <a-sky src="panorama-lady-talk.jpg" rotation="0 -130 0"></a-sky>
+  </a-scene>
    
    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -52,19 +56,19 @@
                   <a href="#welcome" aria-controls="welcome" role="tab" data-toggle="tab">Welcome</a>
                 </li>
                 <li role="presentation">
-                  <a href="#what" aria-controls="what" role="tab" data-toggle="tab">What</a>
+                  <a href="#what" aria-controls="what" role="tab" data-toggle="tab" id="no-vr">What</a>
                 </li>
                 <li role="presentation">
-                  <a href="#why" aria-controls="why" role="tab" data-toggle="tab">Why</a>
+                  <a href="#why" aria-controls="why" role="tab" data-toggle="tab" id="no-vr">Why</a>
                 </li>
                 <li role="presentation">
-                  <a href="#how" aria-controls="how" role="tab" data-toggle="tab">How</a>
+                  <a href="#how" aria-controls="how" role="tab" data-toggle="tab" id="no-vr">How</a>
                 </li>
                 <li role="presentation">
-                  <a href="#who" aria-controls="who" role="tab" data-toggle="tab">Who</a>
+                  <a href="#who" aria-controls="who" role="tab" data-toggle="tab" id="no-vr">Who</a>
                 </li>
                 <li role="presentation">
-                  <a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a>
+                  <a href="#contact" aria-controls="contact" role="tab" data-toggle="tab" id="no-vr">Contact</a>
                 </li>
               </ul>
             </div>
@@ -74,9 +78,7 @@
         <!-- Section: intro -->
         <section id="content" class="tab-content">
           <div role="tabpanel" class="tab-pane fade active" id="welcome">
-            <a-scene>
-              <a-sky src="panorama-lady-talk.jpg" rotation="0 -130 0"></a-sky>
-            </a-scene>
+            
           </div>
           <div role="tabpanel" class="tab-pane fade" id="what">What is showing</div>
           <div role="tabpanel" class="tab-pane fade" id="why">why is showing</div>
@@ -96,9 +98,10 @@
 
      <!-- Script -->
     <script> 
-    $('#convrseTabs a').click(function (e) {
-      e.preventDefault()
-      $(this).tab('show')
+    $('#convrseTabs a#no-vr').click(function (e) {
+      e.preventDefault();
+      $(this).tab('show');
+      $('a-scene').hide();
     })
     </script> 
 
