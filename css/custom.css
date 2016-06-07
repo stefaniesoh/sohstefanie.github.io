@@ -1,13 +1,13 @@
 
 summary{
 	position: fixed;
-    top: 25%;
+    top: 25vh;
     left: 25%;
     width: 50%;
     height: auto;
     text-align: center;
     text-overflow: auto;
-    background: rgba(255,255,255,0.8);
+    background: rgba(255,255,255,0.2);
     padding: 20px;
 }
 
