@@ -34,26 +34,22 @@
   </head>
   <body>
 
-  <a-scene>
-    <a-sky src="panorama-lady-talk.jpg" rotation="0 -130 0"></a-sky>
-  </a-scene>
-   
-   <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="index.html">
-                    <h1>CONVRSE</h1>
-                </a>
-            </div>
+    <a-scene>
+      <a-sky src="panorama-lady-talk.jpg" rotation="0 -130 0"></a-sky>
+    </a-scene>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-              <ul id="convrseTabs" class="nav nav-pills" role="tablist">
+
+    <div id="fh5co-page">
+      <nav class="fh5co-nav-style-1" role="navigation">
+        <div class="container">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 fh5co-logo">
+            <a href="#" class="js-fh5co-mobile-toggle fh5co-nav-toggle"><i></i></a>
+            <a href="#">CONVRSE</a>
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-9 text-right fh5co-link-wrap">
+            <ul id="convrseTabs" class="nav nav-pills fh5co-special" role="tablist">
                 <li role="presentation" class="active">
-                  <a href="#welcome" aria-controls="welcome" role="tab" data-toggle="tab">Welcome</a>
+                  <a href="#welcome" aria-controls="welcome" role="tab" data-toggle="tab" id="show-vr">Welcome</a>
                 </li>
                 <li role="presentation">
                   <a href="#what" aria-controls="what" role="tab" data-toggle="tab" id="no-vr">What</a>
@@ -71,40 +67,47 @@
                   <a href="#contact" aria-controls="contact" role="tab" data-toggle="tab" id="no-vr">Contact</a>
                 </li>
               </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-
-        <!-- Section: intro -->
-        <section id="content" class="tab-content">
-          <div role="tabpanel" class="tab-pane fade active" id="welcome">
-            
           </div>
-          <div role="tabpanel" class="tab-pane fade" id="what">What is showing</div>
-          <div role="tabpanel" class="tab-pane fade" id="why">why is showing</div>
-          <div role="tabpanel" class="tab-pane fade" id="how">How is showing</div>
-          <div role="tabpanel" class="tab-pane fade" id="who">Who is showing</div>
-          <div role="tabpanel" class="tab-pane fade" id="contact">Contact is showing</div>
-        </section>
-      <!-- /Section: intro -->
+        </div>
+      </nav>
 
-      <!-- Core JavaScript Files -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script> 
-    <script src="js/jquery.scrollTo.js"></script>
-    <script src="js/wow.min.js"></script>
+      <!-- Section: intro -->
+      <section id="content" class="tab-content">
+        <div role="tabpanel" class="tab-pane fade active" id="welcome">
+          
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="what">What is showing</div><!--end of what-->
+        <div role="tabpanel" class="tab-pane fade" id="why">why is showing</div><!--end of why-->
+        <div role="tabpanel" class="tab-pane fade" id="how">How is showing</div><!--end of how-->
+        <div role="tabpanel" class="tab-pane fade" id="who">Who is showing</div><!--end of who-->
+        <div role="tabpanel" class="tab-pane fade" id="contact">Contact is showing</div><!--end of contact-->
+      </section>
+    <!-- /Section: intro -->
+
+        <!-- Core JavaScript Files -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.easing.min.js"></script> 
+      <script src="js/jquery.scrollTo.js"></script>
+      <script src="js/wow.min.js"></script>
 
 
-     <!-- Script -->
-    <script> 
-    $('#convrseTabs a#no-vr').click(function (e) {
-      e.preventDefault();
-      $(this).tab('show');
-      $('a-scene').hide();
-    })
-    </script> 
+       <!-- Script -->
+      <script> 
+      $('#convrseTabs a#no-vr').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+        $('a-scene').hide();
+      })
 
+      $('#convrseTabs a#show-vr').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+        $('a-scene').show();
+      })
+      </script> 
+
+    </div><!-- end of fh5co-page-->
 
   </body>
 </html>
