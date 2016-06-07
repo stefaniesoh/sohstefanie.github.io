@@ -1,13 +1,11 @@
-a-scene{
-    position: relative;
-}
+
 summary{
-	position: absolute;
+	position: fixed;
     top: 25%;
-    left: 50%;
-    width: 50%;
+    left: 25%;
+    width: 75%;
     height: auto;
     text-align: center;
     text-overflow: auto;
-    z-index: 8;
+    color: white;
 }
