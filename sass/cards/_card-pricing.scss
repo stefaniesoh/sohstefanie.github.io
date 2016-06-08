@@ -1,13 +1,13 @@
-.fh5co-pricing-style-1,
-.fh5co-pricing-style-2  {
+.convrse-pricing-style-1,
+.convrse-pricing-style-2  {
 	padding: 5em 0;
 	@media screen and (max-width: $screen-sm) {
 		padding: 3em 0;
 	}
 }
 
-.fh5co-pricing-style-1 {
-	.fh5co-price {
+.convrse-pricing-style-1 {
+	.convrse-price {
 		padding-top: 0em;
 		display: block;
 		font-size: 50px;
@@ -24,7 +24,7 @@
 		}
 	}
 	
-	.fh5co-currency {
+	.convrse-currency {
 		vertical-align: super;
 		font-size: 30px!important;
 		color: $brand-primary!important;
@@ -34,7 +34,7 @@
 
 
 
-	.fh5co-pricing-item {
+	.convrse-pricing-item {
 		display: block;
 		color: lighten($brand-black, 20%);
 		float: left;
@@ -57,14 +57,14 @@
 			outline: none;
 		}
 
-		.fh5co-pricing-item-lead {
+		.convrse-pricing-item-lead {
 			font-size: 12px;
 			font-family: $font-tertiary;
 			letter-spacing: 2px;
 			text-transform: uppercase;
 			margin-bottom: 15px;
 		}
-		.fh5co-pricing-item-text {
+		.convrse-pricing-item-text {
 			font-size: $font-size-base;
 			color: lighten($brand-black, 65%);
 		}
@@ -83,9 +83,9 @@
 	}
 }
 
-.fh5co-pricing-style-2 {
+.convrse-pricing-style-2 {
 	background: $brand-success;
-	.fh5co-heading {
+	.convrse-heading {
 		color: $brand-white;
 	}
 	p {

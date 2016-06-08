@@ -1,24 +1,24 @@
-.fh5co-team-style-1,
-.fh5co-team-style-2,
-.fh5co-team-style-3 {
+.convrse-team-style-1,
+.convrse-team-style-2,
+.convrse-team-style-3 {
 	padding: 5em 0;
 	@media screen and (max-width: $screen-sm) {
 		padding: 3em 0;
 	}
 }
-.fh5co-team-style-1 {
-	.fh5co-person {
+.convrse-team-style-1 {
+	.convrse-person {
 		position: relative;
 		height: 350px;
 		display: block;
 		margin-bottom: 30px;
 		@include bgImageControls;
-		.fh5co-overlay,
-		.fh5co-text {
+		.convrse-overlay,
+		.convrse-text {
 			opacity: 0;
-			@include fh5co-transition(.5s);
+			@include convrse-transition(.5s);
 		}
-		.fh5co-overlay {
+		.convrse-overlay {
 			position: absolute;
 			top: 0;
 			bottom: 0;
@@ -30,7 +30,7 @@
 			opacity: 0;
 			z-index: 2;
 		}
-		.fh5co-text {
+		.convrse-text {
 			position: absolute;
 			width: 100%;
 			text-align: center;
@@ -41,7 +41,7 @@
 			h3, p {
 				opacity: 0;
 				position: relative;
-				@include fh5co-transition(.5s);
+				@include convrse-transition(.5s);
 			}
 			h3 {
 				color: $brand-white;
@@ -56,10 +56,10 @@
 			
 		}
 		&:hover {
-			.fh5co-overlay {
+			.convrse-overlay {
 				opacity: .9;
 			}
-			.fh5co-text {
+			.convrse-text {
 				opacity: 1;
 			}
 
@@ -73,15 +73,15 @@
 	}
 }
 
-.fh5co-team-style-2 {
+.convrse-team-style-2 {
 	background: lighten($brand-black, 98%);
-	.fh5co-person {
+	.convrse-person {
 		background: $brand-white;
 		text-align: center;
 		padding: 30px;
 		float: left;
 		width: 100%;
-		@include fh5co-transition(.5s);
+		@include convrse-transition(.5s);
 		@include border-radius(7px);
 		figure {
 			width: 150px;
@@ -91,12 +91,12 @@
 			margin-bottom: 20px;
 			@include border-radius(50%);
 		}
-		.fh5co-text {
+		.convrse-text {
 			padding: 10px;
 			h3 {
 				margin-bottom: 0;
 			}
-			.fh5co-meta {
+			.convrse-meta {
 				color: lighten($brand-black,70%)!important;
 				font-family: $font-tertiary;
 				font-size: 12px;
@@ -113,7 +113,7 @@
 			box-shadow: 0 0 20px 10px rgba(0,0,0,.1);
 		}
 	}
-	.fh5co-social {
+	.convrse-social {
 		padding: 0;
 		margin: 0;
 		li {
@@ -134,7 +134,7 @@
 	}
 
 }
-.fh5co-team-style-3 {
+.convrse-team-style-3 {
 	.person {
 		text-align: center;
 		margin-bottom: 40px;

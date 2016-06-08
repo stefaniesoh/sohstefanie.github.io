@@ -1,4 +1,4 @@
-#fh5co-offcanvass {
+#convrse-offcanvass {
 	position: fixed;
 	width: 250px;
 	bottom: 0;
@@ -11,7 +11,7 @@
 
 	&.offcanvass-nav-style-2,
 	&.offcanvass-nav-style-1 {
-		.fh5co-special, .fh5co-inline {
+		.convrse-special, .convrse-inline {
 			margin-top: 20px;
 			padding-top: 20px;
 			border-top: 1px solid rgba(255,255,255,.05);
@@ -29,16 +29,16 @@
 	> nav {
 		position: relative!important;
 	}
-	&.fh5co-offcanvass-left {
+	&.convrse-offcanvass-left {
 		left: 0;
 		-moz-transform: translateX(-250px);
 	  	-webkit-transform: translateX(-250px);
 	  	-ms-transform: translateX(-250px);
 	  	-o-transform: translateX(-250px);
 	  	transform: translateX(-250px);
-	  	@include fh5co-transition(.8s, ease-in);
+	  	@include convrse-transition(.8s, ease-in);
 		.mobile-menu-expanded & {
-			@include fh5co-transition(.4s, ease-out);
+			@include convrse-transition(.4s, ease-out);
 			-moz-transform: translateX(0px);
 		  	-webkit-transform: translateX(0px);
 		  	-ms-transform: translateX(0px);
@@ -46,16 +46,16 @@
 		  	transform: translateX(0px);
 		}
 	}
-	&.fh5co-offcanvass-right {
+	&.convrse-offcanvass-right {
 		right: 0;
 		-moz-transform: translateX(250px);
 	  	-webkit-transform: translateX(250px);
 	  	-ms-transform: translateX(250px);
 	  	-o-transform: translateX(250px);
 	  	transform: translateX(250px);
-	  	@include fh5co-transition(.8s, ease-in);
+	  	@include convrse-transition(.8s, ease-in);
 		.mobile-menu-expanded & {
-			@include fh5co-transition(.5s, ease-out);
+			@include convrse-transition(.5s, ease-out);
 			-moz-transform: translateX(0px);
 		  	-webkit-transform: translateX(0px);
 		  	-ms-transform: translateX(0px);
@@ -74,7 +74,7 @@
 			text-decoration: none;
 		}
 	}
-	.fh5co-logo {
+	.convrse-logo {
 		a {
 			font-size: 30px;
 			color: rgba(255,255,255,.5);
@@ -118,7 +118,7 @@
 				}
 			}
 		}
-		&.fh5co-inline {
+		&.convrse-inline {
 			width: 100%;
 			li {
 				display: inline-block;
@@ -139,18 +139,18 @@
 }
 
 
-#fh5co-page {
+#convrse-page {
 	position: relative;
 	z-index: 2;
-	&.fh5co-offcanvass-left {
+	&.convrse-offcanvass-left {
 		-moz-transform: translateX(0px);
 	  	-webkit-transform: translateX(0px);
 	  	-ms-transform: translateX(0px);
 	  	-o-transform: translateX(0px);
 	  	transform: translateX(0px);
-	  	@include fh5co-transition(.4s, ease-in);
+	  	@include convrse-transition(.4s, ease-in);
 		.mobile-menu-expanded & {
-			@include fh5co-transition(.5s, ease-out);
+			@include convrse-transition(.5s, ease-out);
 			-moz-transform: translateX(250px);
 		  	-webkit-transform: translateX(250px);
 		  	-ms-transform: translateX(250px);
@@ -158,15 +158,15 @@
 		  	transform: translateX(250px);
 		}	
 	}
-	&.fh5co-offcanvass-right {
-		@include fh5co-transition(.5s, ease-in);
+	&.convrse-offcanvass-right {
+		@include convrse-transition(.5s, ease-in);
 		-moz-transform: translateX(0px);
 	  	-webkit-transform: translateX(0px);
 	  	-ms-transform: translateX(0px);
 	  	-o-transform: translateX(0px);
 	  	transform: translateX(0px);
 		.mobile-menu-expanded & {
-			@include fh5co-transition(.5s, ease-out);
+			@include convrse-transition(.5s, ease-out);
 			-moz-transform: translateX(-250px);
 		  	-webkit-transform: translateX(-250px);
 		  	-ms-transform: translateX(-250px);
@@ -177,7 +177,7 @@
 	
 }
 /* NAV STYLE #1 */	
-.fh5co-nav-style-1, .fh5co-nav-style-2 {
+.convrse-nav-style-1, .convrse-nav-style-2 {
 	position: absolute;
 	z-index: 8;
 	width: 100%;
@@ -186,8 +186,8 @@
 		margin-top: 20px;
 	}
 	
-	&[data-offcanvass-position="fh5co-offcanvass-left"] {
-		.fh5co-nav-toggle {
+	&[data-offcanvass-position="convrse-offcanvass-left"] {
+		.convrse-nav-toggle {
 			right: auto;
 			top: auto;
 			top: 0;
@@ -195,8 +195,8 @@
 			margin-top: -15px!important;
 		}
 	}
-	&[data-offcanvass-position="fh5co-offcanvass-right"] {
-		.fh5co-nav-toggle {
+	&[data-offcanvass-position="convrse-offcanvass-right"] {
+		.convrse-nav-toggle {
 			right: auto;
 			top: auto;
 			top: 0;
@@ -206,7 +206,7 @@
 	}
 
 	
-	.fh5co-logo {
+	.convrse-logo {
 		margin-top: 8px;
 		position: relative;
 		a {
@@ -225,7 +225,7 @@
 	}
 	
 	
-	.fh5co-link-wrap {
+	.convrse-link-wrap {
 		@media screen and (max-width: $screen-sm) {
 			display: none;
 		}
@@ -284,7 +284,7 @@
 /* NAV STYLE #2 */
 
 
-.fh5co-nav-style-2 {
+.convrse-nav-style-2 {
 	background: transparent;
 	border: transparent;
 	margin-top: 30px;
@@ -321,7 +321,7 @@
 					}
 					font-family: $font-primary;
 					font-size: $font-size-base - 2;
-					@include fh5co-transition(.3s);
+					@include convrse-transition(.3s);
 					&:hover {
 						color: rgba(255,255,255,1);
 						@media screen and (max-width: $screen-sm) {
@@ -342,7 +342,7 @@
 				}
 
 			}
-			&.fh5co-social {
+			&.convrse-social {
 				a {
 					font-size: $font-size-base + 2;
 				}
@@ -386,7 +386,7 @@
 		}
 
 	}
-	.fh5co-nav-toggle {
+	.convrse-nav-toggle {
 		&.active i {
 	      &::before, &::after {
 	         background: rgba(255,255,255,.5);

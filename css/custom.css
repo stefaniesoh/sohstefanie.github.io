@@ -1,9 +1,14 @@
+body{
+    background: url(../images/full.jpg) no-repeat fixed top left;
+}
+
 
 summary{
 	position: fixed;
     top: 25vh;
-    left: 25%;
-    width: 50%;
+    left: 10vw;
+    max-width: 80%;
+    width: auto;
     height: auto;
     text-align: center;
     text-overflow: auto;
@@ -11,6 +16,39 @@ summary{
     padding: 20px;
 }
 
-summary h1, summary h2, summary p{
+summary h1, summary h2, summary p, .brand-white{
     color: white;
 }
+
+.transparent-white{
+    color: rgba(255,255,255,0.7);
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+.convrse-cover-style-1{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3e65e5+0,f37f66+19,f7f7f9+20 */
+    background: #3e65e5; /* Old browsers */
+    background: -moz-linear-gradient(top, #f37f66 0%, #f7f7f9 10%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f37f66 0%,#f7f7f9 10%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f37f66 0%,#f7f7f9 10%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f37f66', endColorstr='#f7f7f9',GradientType=0 ); /* IE6-9 */
+
+}
+
+.convrse-cover-style-2{
+    background: url(../images/full.jpg) no-repeat fixed top left; 
+}
+
+.p-b {
+    padding-top: 150px;
+}
+
+.btn-primary {
+    background: #3e65e5;
+    color: #fff;
+    border: 2px solid #3e65e5;

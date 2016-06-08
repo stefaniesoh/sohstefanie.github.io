@@ -1,19 +1,19 @@
-.fh5co-content-style-2,
-.fh5co-content-style-3,
-.fh5co-content-style-4,
-.fh5co-content-style-5,
-.fh5co-content-style-6,
-.fh5co-content-style-7,
-.fh5co-content-style-8,
-.fh5co-content-style-9,
-.fh5co-content-style-10 {
+.convrse-content-style-2,
+.convrse-content-style-3,
+.convrse-content-style-4,
+.convrse-content-style-5,
+.convrse-content-style-6,
+.convrse-content-style-7,
+.convrse-content-style-8,
+.convrse-content-style-9,
+.convrse-content-style-10 {
 	padding: 5em 0;
 	background: $brand-white;
 	@media screen and (max-width: $screen-sm) {
 		padding: 3em 0;
 	}
 }
-.fh5co-content-style-2 {
+.convrse-content-style-2 {
 	background: #7dc6d9;
 	h2 {
 		color: $brand-white;
@@ -23,8 +23,8 @@
 		font-size: 19px;
 		line-height: 29px;
 	}
-	.fh5co-gallery {
-		.fh5co-link-block {
+	.convrse-gallery {
+		.convrse-link-block {
 			position: relative;
 			display: block;
 			overflow: hidden;
@@ -34,7 +34,7 @@
 			margin-bottom: 30px;
 			height: 160px;
 
-			.fh5co-text {
+			.convrse-text {
 				position: absolute;
 				z-index: 9;
 				bottom: 0;
@@ -44,7 +44,7 @@
 				width: 100%;
 				opacity: 0;
 				margin-top: 30px;
-				@include fh5co-transition(.2s);
+				@include convrse-transition(.2s);
 				@include border-radius(7px);
 				.icon {
 					position: absolute;
@@ -57,7 +57,7 @@
 				}
 			}
 			img {
-				@include fh5co-transition(.5s);
+				@include convrse-transition(.5s);
 				@include border-radius(7px);
 				position: absolute;
 				top: 0;
@@ -66,7 +66,7 @@
 				bottom: 0;
 
 			}
-			.fh5co-overlay {
+			.convrse-overlay {
 				z-index: 8;
 				position: absolute;
 				top: 0;
@@ -76,28 +76,28 @@
 				// background: rgba(0, 0, 0 , .5);
 				background: $brand-primary;
 				opacity: 0;
-				@include fh5co-transition(.5s);
+				@include convrse-transition(.5s);
 				@include border-radius(7px);
 			}
 			&:hover, &:focus {
 				overflow: hidden;
-				.fh5co-overlay {
+				.convrse-overlay {
 					opacity: .8;
 				}
-				.fh5co-text {
+				.convrse-text {
 					margin-top: 0px;
 					opacity: 1;
 				}
 				img {
-					@include fh5co-scale();
+					@include convrse-scale();
 
 				}
 			}
 		}
 	}
 }
-.fh5co-content-style-3 {
-	.fh5co-siidear-links {
+.convrse-content-style-3 {
+	.convrse-siidear-links {
 		padding: 0;
 		margin: 0 0 20px 0;
 		@media screen and (max-width: $screen-sm) {
@@ -122,7 +122,7 @@
 					margin-left: -17px;
 					background: lighten($brand-black, 90%);
 					@include border-radius(50%);
-					@include fh5co-transition(.5s);
+					@include convrse-transition(.5s);
 				}
 				&:hover, &:active, &:focus {
 					color: lighten($brand-black, 10%);	
@@ -154,22 +154,22 @@
 						margin-left: -17px;
 						background: $brand-primary;
 						@include border-radius(50%);
-						@include fh5co-transition(.5s);
+						@include convrse-transition(.5s);
 					}
 				}
 			}
 		}
 	}
 }
-.fh5co-content-style-4 {
+.convrse-content-style-4 {
 	background: $brand-primary;
-	.fh5co-sub {
+	.convrse-sub {
 		font-size: $font-size-base - 1;
 		font-weight: 400;
 		color: rgba(255,255,255,.5);
 		margin-bottom: 0;
 	}
-	.fh5co-heading {
+	.convrse-heading {
 		color: $brand-white;
 	}
 	p {
@@ -188,9 +188,9 @@
 		}
 	}
 }
-.fh5co-content-style-5 {
+.convrse-content-style-5 {
 	background: lighten($brand-black, 97%);
-	.fh5co-content-item {
+	.convrse-content-item {
 		float: left;
 		width: 100%;
 		position: relative;
@@ -200,15 +200,15 @@
 		@media screen and (max-width: $screen-sm) {
 			display: block
 		}
-		.fh5co-content-description,
-		.fh5co-content-figure {
+		.convrse-content-description,
+		.convrse-content-figure {
 			width: 50%;
 			@media screen and (max-width: $screen-sm) {
 				display: block;
 				width: 100%;
 			}
 		}
-		.fh5co-content-figure {
+		.convrse-content-figure {
 			overflow: hidden;
 			position: relative;
 			> div {
@@ -223,13 +223,13 @@
 				background-repeat: no-repeat;
 				background-size: cover;
 				background-position: center center;
-				@include fh5co-transition(.5s);
+				@include convrse-transition(.5s);
 			}
 			@media screen and (max-width: $screen-sm) {
 				height: 400px;
 			}
 		}
-		.fh5co-content-description {
+		.convrse-content-description {
 			background: $brand-white;
 			padding: 4em;
 			// font-size: 20px;
@@ -248,8 +248,8 @@
 				font-weight: 300;
 			}
 		}
-		&.fh5co-img-right {
-			.fh5co-content-figure {
+		&.convrse-img-right {
+			.convrse-content-figure {
 				position: absolute;
 				right: 0px;
 				top: 0;
@@ -269,15 +269,15 @@
 			}
 		}	
 		&:focus, &:hover {
-			.fh5co-content-figure {
+			.convrse-content-figure {
 				> div {
-					@include fh5co-scale();
+					@include convrse-scale();
 				}
 			}
 		}		
 	}
 }
-.fh5co-content-style-6, .fh5co-content-style-7 {
+.convrse-content-style-6, .convrse-content-style-7 {
 	background: lighten($brand-black, 97%);
 	.link-block {
 		figure {
@@ -295,34 +295,34 @@
 		p {
 			color: lighten($brand-black, 50%);
 		}
-		.fh5co-meta {
+		.convrse-meta {
 			color: lighten($brand-black, 70%);
 			text-transform: uppercase;
 			font-size: $font-size-base - 3;
 			letter-spacing: 2px;
 		}
 		img {
-			@include fh5co-transition(.3s);
+			@include convrse-transition(.3s);
 		}
 		&:hover {
 			figure {
 				@include border-radius(7px);
 			}
 			img {
-				@include fh5co-scale();
+				@include convrse-scale();
 			}
 		}
 	}
 }
-.fh5co-content-style-6 {
+.convrse-content-style-6 {
 	background: $brand-white;
 }
-.fh5co-content-style-8 {
+.convrse-content-style-8 {
 	h4 {
 		margin-bottom: 7px;
 	}
 }
-.fh5co-content-style-9 {
+.convrse-content-style-9 {
 	background: lighten($brand-black, 97%);
 	.btn-actions {
 		.or {
@@ -338,7 +338,7 @@
 }
 
 /* CONTENT STYLE #10 */
-.fh5co-content-style-10 {
+.convrse-content-style-10 {
 	background: $brand-primary;
 	h2 {
 		margin-top:20px;

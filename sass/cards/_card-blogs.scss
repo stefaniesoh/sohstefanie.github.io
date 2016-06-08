@@ -1,11 +1,11 @@
 /* BLOG STYLE #1 */
-.fh5co-blog-style-1 {
+.convrse-blog-style-1 {
 	padding: 7em 0;
 	background: $brand-white;
 	@media screen and (max-width: $screen-sm) {
 		padding: 4em 0;
 	}
-	.fh5co-post {
+	.convrse-post {
 		float: left;
 		width: 100%;
 		background: $brand-white;
@@ -17,22 +17,22 @@
 		-o-box-shadow: 0px 0px 20px #DFDFDF;
 		box-shadow: 0px 0px 20px #DFDFDF;
 		@include border-radius(7px);
-		@include fh5co-transition(.3s);
+		@include convrse-transition(.3s);
 		img {
-			@include fh5co-transition(.5s);
+			@include convrse-transition(.5s);
 		}
 		&:hover, &:focus {
 			img {
-				@include fh5co-scale(1.1);
+				@include convrse-scale(1.1);
 			}
 		}
-		.fh5co-post-image {
+		.convrse-post-image {
 			position: relative;
 			overflow: hidden;
 			border-top-right-radius: 7px;
 			border-top-left-radius: 7px;
 			z-index: 1;
-			.fh5co-overlay {
+			.convrse-overlay {
 				z-index: 1;
 				background: rgba(0, 0, 0, .3);
 				position: absolute;
@@ -41,7 +41,7 @@
 				left: 0;
 				right: 0;
 			}
-			.fh5co-category {
+			.convrse-category {
 				margin: 10px 0 0 15px;
 				float: left;
 				z-index: 2;
@@ -68,7 +68,7 @@
 			}
 			
 		}
-		.fh5co-post-text {
+		.convrse-post-text {
 			padding: 20px;
 			h3 {
 				font-size: 17px;
@@ -94,7 +94,7 @@
 				}
 			}
 		}
-		.fh5co-post-meta {
+		.convrse-post-meta {
 			border-top: 1px solid lighten($brand-black, 94%);
 			padding: 10px 20px;
 			font-family: $font-primary;
@@ -121,7 +121,7 @@
 	}
 }
 
-.fh5co-blog-style-2 {
+.convrse-blog-style-2 {
 	background: lighten($brand-black, 97%);
 	padding: 5em 0;
 	// background: $brand-white;
@@ -141,21 +141,21 @@
 		}
 		&:hover {
 			h3 {
-				@include fh5co-transition(.3s);
+				@include convrse-transition(.3s);
 				color: $brand-primary;
 			}
 		}
 		p {
 			color: lighten($brand-black, 50%);
 		}
-		.fh5co-meta {
+		.convrse-meta {
 			color: lighten($brand-black, 70%);
 			text-transform: uppercase;
 			font-size: $font-size-base - 3;
 			letter-spacing: 2px;
 		}
 		img {
-			@include fh5co-transition(.3s);
+			@include convrse-transition(.3s);
 		}
 		&:hover {
 			img {

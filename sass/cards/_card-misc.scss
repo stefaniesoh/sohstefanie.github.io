@@ -1,5 +1,5 @@
 /* Burger Menu */
-.fh5co-nav-toggle {
+.convrse-nav-toggle {
    width:25px;
    height:25px;
    cursor: pointer;
@@ -36,22 +36,22 @@
   }
 }
 
-.fh5co-nav-toggle i::before {
+.convrse-nav-toggle i::before {
    top: -7px;
 }
-.fh5co-nav-toggle i::after {
+.convrse-nav-toggle i::after {
    bottom: -7px;
 }
-.fh5co-nav-toggle:hover i::before {
+.convrse-nav-toggle:hover i::before {
    top: -10px;
 }
-.fh5co-nav-toggle:hover i::after {
+.convrse-nav-toggle:hover i::after {
    bottom: -10px;
 }
-.fh5co-nav-toggle.active i {
+.convrse-nav-toggle.active i {
    background: transparent;
 }
-.fh5co-nav-toggle.active i::before {
+.convrse-nav-toggle.active i::before {
    top:0;
    -webkit-transform: rotateZ(45deg);
    -moz-transform: rotateZ(45deg);
@@ -59,7 +59,7 @@
    -o-transform: rotateZ(45deg);
    transform: rotateZ(45deg);
 }
-.fh5co-nav-toggle.active i::after {
+.convrse-nav-toggle.active i::after {
    bottom:0;
    -webkit-transform: rotateZ(-45deg);
    -moz-transform: rotateZ(-45deg);
@@ -67,7 +67,7 @@
    -o-transform: rotateZ(-45deg);
    transform: rotateZ(-45deg);
 }
-.fh5co-nav-toggle {
+.convrse-nav-toggle {
    position: absolute;
    top: 0px;
 
