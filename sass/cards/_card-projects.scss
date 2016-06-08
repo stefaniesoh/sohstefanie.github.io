@@ -1,16 +1,16 @@
 /* PROJECTS STYLE #1 */
-.fh5co-project-style-1,
-.fh5co-project-style-2,
-.fh5co-project-style-3,
-.fh5co-project-style-4 {
+.convrse-project-style-1,
+.convrse-project-style-2,
+.convrse-project-style-3,
+.convrse-project-style-4 {
 	padding: 5em 0;
 	@media screen and (max-width: $screen-sm) {
 		padding: 3em 0;
 	}
 }
-.fh5co-project-style-1 {
+.convrse-project-style-1 {
 	
-	.fh5co-grid {
+	.convrse-grid {
 		@include border-radius(4px);
 		background-size: cover;
 		background-position: center center;
@@ -26,7 +26,7 @@
 			left: 0;
 			right: 0;
 			opacity: 0;
-			@include fh5co-transition(.3s);
+			@include convrse-transition(.3s);
 			i {
 				text-align: center;
 				position: absolute;
@@ -43,24 +43,24 @@
 			
 		}
 	}
-	.fh5co-grid-1 {
+	.convrse-grid-1 {
 		height: 544px;
 		@media screen and (max-width: $screen-sm) {
 			height: 254px;	
 		}
 	}
-	.fh5co-grid-2 {
+	.convrse-grid-2 {
 		height: 257px;
 	}
-	.fh5co-grid-3 {
+	.convrse-grid-3 {
 		height: 257px;
 
 	}
 }
 
-.fh5co-project-style-2 {
+.convrse-project-style-2 {
 	padding-bottom: 0;
-	.fh5co-projects {
+	.convrse-projects {
 		ul {
 			padding: 0;
 			margin: 0;
@@ -84,7 +84,7 @@
 					position: relative;
 					display: block;
 			
-					.fh5co-overlay {
+					.convrse-overlay {
 						background: $brand-black;
 						position: absolute;
 						top: 0;
@@ -94,14 +94,14 @@
 						z-index: 1;
 						opacity: .8;
 						width: 100%;
-						@include fh5co-transition(.5s);
+						@include convrse-transition(.5s);
 					}
-					.fh5co-text {
+					.convrse-text {
 						display: table;
 						width: 100%;
 						position: relative;
 						z-index: 2;
-						.fh5co-text-inner {
+						.convrse-text-inner {
 							display: table-cell;
 							vertical-align: middle;
 							height: 200px;
@@ -131,7 +131,7 @@
 						position: relative;
 					}
 					&:hover {
-						.fh5co-overlay {
+						.convrse-overlay {
 							opacity: .4;
 						}
 					}
@@ -142,23 +142,23 @@
 		}
 	}
 }
-.fh5co-project-style-3 {
-	.fh5co-project-wrap {
+.convrse-project-style-3 {
+	.convrse-project-wrap {
 		position: relative;
 		overflow: hidden;
 	}
-	.fh5co-project-item {
+	.convrse-project-item {
 		position: relative;
 		height: 350px;
 		display: block;
 		margin-bottom: 30px;
 		@include bgImageControls;
-		.fh5co-overlay,
-		.fh5co-text {
+		.convrse-overlay,
+		.convrse-text {
 			opacity: 0;
-			@include fh5co-transition(.5s);
+			@include convrse-transition(.5s);
 		}
-		.fh5co-overlay {
+		.convrse-overlay {
 			position: absolute;
 			top: 0;
 			bottom: 0;
@@ -170,7 +170,7 @@
 			opacity: 0;
 			z-index: 2;
 		}
-		.fh5co-text {
+		.convrse-text {
 			position: absolute;
 			width: 100%;
 			text-align: center;
@@ -181,7 +181,7 @@
 			h3, p {
 				opacity: 0;
 				position: relative;
-				@include fh5co-transition(.5s);
+				@include convrse-transition(.5s);
 			}
 			h3 {
 				color: $brand-white;
@@ -196,10 +196,10 @@
 			
 		}
 		&:hover {
-			.fh5co-overlay {
+			.convrse-overlay {
 				opacity: .9;
 			}
-			.fh5co-text {
+			.convrse-text {
 				opacity: 1;
 			}
 
@@ -213,15 +213,15 @@
 	}
 }
 
-.fh5co-project-style-4 {
-	.fh5co-heading {
+.convrse-project-style-4 {
+	.convrse-heading {
 		margin-bottom: 20px;
 	}
-	.fh5co-meta {
+	.convrse-meta {
 		color: lighten($brand-black, 70%);
 		margin-bottom: 3em;
 	}
-	.fh5co-checklist {
+	.convrse-checklist {
 		padding-top: 4em;
 		h3 {
 			color: $brand-black;
@@ -238,7 +238,7 @@
 			}
 		}
 	}
-	.fh5co-share {
+	.convrse-share {
 		padding-top: 4em;
 		h3 {
 			color: $brand-black;
@@ -261,13 +261,13 @@
 			}
 		}
 	}
-	.fh5co-navigation {
-		.fh5co-icon {
+	.convrse-navigation {
+		.convrse-icon {
 			font-size: 28px;
 		}
-		.fh5co-prev,
-		.fh5co-next,
-		.fh5co-all {
+		.convrse-prev,
+		.convrse-next,
+		.convrse-all {
 			a {
 				font-size: $font-size-base + 4;
 				color: $brand-black;
@@ -279,9 +279,9 @@
 	}
 }
 
-.fh5co-project-style-5 {
+.convrse-project-style-5 {
 	background: lighten($brand-black, 97%);
-	.fh5co-project-item {
+	.convrse-project-item {
 		float: left;
 		width: 100%;
 		position: relative;
@@ -291,15 +291,15 @@
 		@media screen and (max-width: $screen-sm) {
 			display: block
 		}
-		.fh5co-project-description,
-		.fh5co-project-figure {
+		.convrse-project-description,
+		.convrse-project-figure {
 			width: 50%;
 			@media screen and (max-width: $screen-sm) {
 				display: block;
 				width: 100%;
 			}
 		}
-		.fh5co-project-figure {
+		.convrse-project-figure {
 			overflow: hidden;
 			position: relative;
 			> div {
@@ -314,13 +314,13 @@
 				background-repeat: no-repeat;
 				background-size: cover;
 				background-position: center center;
-				@include fh5co-transition(.5s);
+				@include convrse-transition(.5s);
 			}
 			@media screen and (max-width: $screen-sm) {
 				height: 400px;
 			}
 		}
-		.fh5co-project-description {
+		.convrse-project-description {
 			background: $brand-white;
 			padding: 4em;
 			// font-size: 20px;
@@ -339,8 +339,8 @@
 				font-weight: 300;
 			}
 		}
-		&.fh5co-img-right {
-			.fh5co-project-figure {
+		&.convrse-img-right {
+			.convrse-project-figure {
 				position: absolute;
 				right: 0px;
 				top: 0;
@@ -360,9 +360,9 @@
 			}
 		}	
 		&:focus, &:hover {
-			.fh5co-project-figure {
+			.convrse-project-figure {
 				> div {
-					@include fh5co-scale();
+					@include convrse-scale();
 				}
 			}
 		}		

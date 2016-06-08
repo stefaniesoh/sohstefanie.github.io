@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 p {
 	margin-bottom: 30px;
-}
+}convrse
 h1 {
 	font-size: 40px;
 }
@@ -34,7 +34,7 @@ h2 {
 
 a {
 	color: $brand-primary;
-	@include fh5co-transition(.5s);
+	@include convrse-transition(.5s);
 	&:hover, &:focus, &:active {
 		outline: none;
 		text-decoration: none;
@@ -160,7 +160,7 @@ a {
 	font-size: 12px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	@include fh5co-transition(.3s);
+	@include convrse-transition(.3s);
 	&:hover, &:focus, &:active {
 		box-shadow: none;
 	}
@@ -202,7 +202,7 @@ a {
 		top: 2px;
 		position: relative;
 		@include inline-block;
-		@include fh5co-transition(.3s);
+		@include convrse-transition(.3s);
 	}
 	&:hover {
 		.lnk-icon-right {
@@ -328,7 +328,7 @@ a {
 
 
 /* Utilities */
-.fh5co-flex {
+.convrse-flex {
 	@include flex;
 }
 .p-b {

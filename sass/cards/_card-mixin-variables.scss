@@ -4,14 +4,14 @@
 	background-size: cover;
 	background-position: center center;
 }
-@mixin fh5co-transition($transition, $easing: ease) {
+@mixin convrse-transition($transition, $easing: ease) {
      -webkit-transition: all $transition $easing;
 	  -moz-transition: all $transition $easing;
 	  -ms-transition: all $transition $easing;
 	  -o-transition: all $transition $easing;
 	  transition: all $transition $easing;
 }
-@mixin fh5co-scale($scale: 1.1) {
+@mixin convrse-scale($scale: 1.1) {
 	-webkit-transform: scale($scale);
 	-moz-transform: scale($scale);
 	-o-transform: scale($scale);
