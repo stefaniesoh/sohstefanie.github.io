@@ -1,0 +1,25 @@
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Monsterrat:400,700|Merriweather:400,300italic,700');
+
+/* Animate.css */
+@import "animate.css";
+
+/* Icomoon Icon Fonts*/
+@import "icomoon.css";
+
+/* Magnific Popup*/
+@import "magnific-popup.css";
+
+ /* Owl Carousel */
+@import "owl.carousel.min.css";
+@import "owl.theme.default.min.css";
+
+/* Bootstrap  */
+@import "bootstrap.css";
+
+/* Cards */
+@import "cards.css";
+
+/* Custom */
+@import "custom.css";
