@@ -1,5 +1,10 @@
+html{
+    position: inherit;
+}
+
 body{
     background: url(../images/full.jpg) no-repeat fixed top left;
+    overflow: auto !important;
 }
 
 
