@@ -60,7 +60,7 @@
 
     <div id="convrse-page">
    
-      <nav class="convrse-nav-style-1" role="navigation" data-offcanvass-position="convrse-offcanvass-left">
+      <!--<nav class="convrse-nav-style-1" role="navigation" data-offcanvass-position="convrse-offcanvass-left">
         <div class="container">
           <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 convrse-logo">
             <a href="#" class="js-convrse-mobile-toggle convrse-nav-toggle"><i></i></a>
@@ -91,7 +91,28 @@
               </ul>
           </div>
         </div>
-      </nav>
+      </nav>-->
+
+         <!-- Header -->
+    
+  <nav class="convrse-nav-style-1" role="navigation" data-offcanvass-position="convrse-offcanvass-left">
+    <div class="container">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 convrse-logo">
+        <a href="#" class="js-convrse-mobile-toggle convrse-nav-toggle"><i></i></a>
+        <a href="#">CONVRSE</a>
+      </div>
+      <div class="col-lg-9 col-md-9 col-sm-9 text-right convrse-link-wrap">
+        <ul class="convrse-special" data-offcanvass="yes">
+          <li class="active"><a href="index.html">Welcome</a></li>
+          <li><a href="what.html">What</a></li>
+          <li><a href="why.html">Why</a></li>
+          <li><a href="how.html">How</a></li>
+          <li><a href="who.html">Who</a></li>
+          <li><a href="contact.html" class="call-to-action">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
       <!-- Main Content -->
       <section id="content" class="tab-content">
@@ -306,6 +327,12 @@
   $(this).tab('show');
   $('a-scene').show();
   })
+  </script> 
+
+  <!-- Script -->
+  <script> 
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
   </script> 
 
   <!-- jQuery -->
