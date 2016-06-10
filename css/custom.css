@@ -33,9 +33,9 @@ summary h1, summary h2, summary p, .brand-white{
 .convrse-cover-style-1{
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3e65e5+0,f37f66+24,f7f7f9+25 */
 background: #3e65e5; /* Old browsers */
-background: -moz-linear-gradient(top,  #3e65e5 0%, #f37f66 20%, #f7f7f9 20%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #3e65e5 0%,#f37f66 20%,#f7f7f9 20%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #3e65e5 0%,#f37f66 20%,#f7f7f9 20%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: -moz-linear-gradient(top,  #3e65e5 0%, #f37f66 10%, #f7f7f9 10%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #3e65e5 0%,#f37f66 10%,#f7f7f9 10%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #3e65e5 0%,#f37f66 10%,#f7f7f9 10%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e65e5', endColorstr='#f7f7f9',GradientType=0 ); /* IE6-9 */
 
 }
@@ -54,7 +54,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e65e5', end
     border: 2px solid #3e65e5;
 }
 
-.call-to-action{
+.convrse-nav-style-1 .convrse-link-wrap ul li a.call-to-action, .convrse-nav-style-2 .convrse-link-wrap ul li a.call-to-action{
     border: 2px solid #f59202;
     background: #f59202;
 }
