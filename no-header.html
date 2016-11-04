@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
 </head>
 
-<body class="landing-page">
+<body class="no-header-page">
 
 	<div id="wrapper">
 
@@ -22,17 +22,12 @@
 		</div>
 
 		<div id="panel-two">
-			<div id="banner">
-				{{#header}}
-					<div class="container">{content}</div>
-				{{/header}}
-		    </div>
 
-		    <div id="main">
+			<div id="main">
 				{{#sections}}
 					<div class="container">{content}</div>
 				{{/sections}}
-		    </div>
+			</div>
 
 			<div id="footer">{footer}</div>
 		</div>
