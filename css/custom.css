@@ -2,48 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Quicksand');
 
-/*------------------------------------------ Colours -------------------------------------------*/
-
-.background-sea{
-	/*background-colour: url(../images/background.png) no-repeat bottom center;
-	background-size:cover;*/
-	background-color: #FFFFFF;
-}
-
-.background-profile-sea{
-	/*background: url(../images/bg-profile.png) no-repeat top left;
-	background-size:cover;*/
-	background-color: #FFFFFF;
-}
-
-.background-netruel{
-	background: #DDD;
-}
-
-.text-for-rose-quartz{
-	color: #649ED4;
-}
-
-.text-serenity{
-	color: #C3D7EC;
-}
-
-/*------------------------------------------ Typography -------------------------------------------*/
-
-h1,h2,h3,h4,h5,h6{
-	font-family: 'Playfair Display', serif;
-	line-height: 1.35;
-}
-
-h2 {
-	border-bottom: 1px solid #333;
-	color: #649ED4;
-	text-align: left;
-	margin-top:3em;
-}
-
-
-/*------------------------------------------ General layout -------------------------------------------*/
+/* -------------- General layout for web and mobile  --------------*/
 
 $header-height: 5em;
 $footer-height: 3em;
@@ -55,8 +14,7 @@ html, body{
 body{
   display: table;
   width: 100%;
-	color: #333;
-  font-family: 'Quicksand', sans-serif;
+  font-family:'Quicksand', Helvetica, Arial, sans-serif;
 }
 
 .page-row{
@@ -73,6 +31,7 @@ header{
 }
 
 main{
+	color: #FFF;
 	width: 100%;
 	min-height: calc(100vh - #{$header-height + $footer-height});
 }
@@ -138,12 +97,15 @@ footer p{
 }
 
 /*------------------------------------------ NAVI -------------------------------------------*/
+.navbar{
+	min-height: 100px;
+}
 
 .navbar-default{
-	/*background: url(../images/bg-navi-menu.png) top center no-repeat;
-	background-size:cover;*/
-	background-color: #FFFFFF;
+	background: url(../images/bg-navi-menu.png) top center no-repeat;
+	background-size:cover;
 	border: none;
+    font-weight: 600;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -151,35 +113,33 @@ footer p{
 }
 
 .navbar-default .navbar-brand{
-	color:#333;
-	padding-top: 25px;
+	color:#FFF;
+	padding: 10px 15px;
 }
 
 .navbar-nav > li > a {
 	padding-top: 25px;
 }
 
-.navbar-default .navbar-nav > li > a {
-	color: rgba(51,51,51,0.5);
-	text-transform: uppercase;
-  font-weight: 700;
-	font-size: 10pt;
-	letter-spacing:1px;
-	opacity: 0.5;
-	transition: opacity .25s ease-in-out;
-	-moz-transition: opacity .25s ease-in-out;
-	-webkit-transition: opacity .25s ease-in-out;
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-brand:focus,
+.navbar-default{
+	color:#FFF;
 }
 
 .navbar-toggle {
     margin-top: 12px;
 }
 
+
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
-	color: #333;
-	opacity: 1;
-	/*background-color: transparent;
-	border-bottom: 3px solid #FFF;*/
+	color: #FFF;
+	background-color: transparent;
+	border-bottom: 3px solid #FFF;
 }
 
 .navbar-default .navbar-toggle{
@@ -265,7 +225,7 @@ footer p{
 }
 
 a.arrow.bounce{
-	color: #333;
+	color: #FFF;
 }
 
 a.arrow.bounce:hover{
@@ -279,6 +239,11 @@ a.arrow.bounce:hover{
 	color: #999;
 }
 
+.portfolio-wrapper h2 {
+	color: #649ED4;
+	text-align: center;
+	margin-top:3em;
+}
 
 .portfolio{
 	margin: 2em 0;
@@ -292,8 +257,10 @@ a.arrow.bounce:hover{
 }
 
 .portfolio-thumbnail img{
+	filter: grayscale(1);
 	filter: grayscale(100%);
 	-webkit-filter: grayscale(100%);
+	filter: gray;
 	margin: 1em 0;
 }
 
@@ -371,16 +338,41 @@ footer{
 }
 
 
+/* -------------- Colours  --------------*/
+
+.background-sea{
+	background: url(../images/background.png) no-repeat bottom center;
+	background-size:cover;
+	color: #FFF;
+}
+
+.background-profile-sea{
+	background: url(../images/bg-profile.png) no-repeat top left;
+	background-size:cover;
+	color: #FFF;
+}
+
+.background-netruel{
+	background: #86B5E1;
+	color: #666;
+}
+
+.text-for-rose-quartz{
+	color: #649ED4;
+}
+
+.text-serenity{
+	color: #C3D7EC;
+}
 /* -------------- Small devices (desktops, 768px and below)  -------------- */
 @media (max-width: 768px){
-/*.navbar-default{
+.navbar-default{
 	  background: url(../images/bg-mobile-navi-menu.png) top left no-repeat;
 	  background-size:cover;
-		background-color: #FFFFFF;
 	  border: none;
 	  font-weight: 600;
   	}
-}*/
+}
 
 
 /* -------------- Medium devices (desktops, 992px and below)  -------------- */
