@@ -1,34 +1,34 @@
+/* Import
+========================================== */
+
+
 /* Layout
 ========================================== */
 
-main{
-  /* background: #F5F5F5; */
-}
-
-summary{
-  margin: 8em auto;
-}
-
-section{
-  margin: 4em auto;
-  min-height: 100vh;
+summary, section, footer{
+  margin: 25vh auto;
 }
 
 section:first-child{
-  padding-top: 8em;
+  /* padding-top: 4em; */
 }
 
 section:last-child{
   margin-bottom: 0;
 }
 
-.older-works{
-  /* margin: 5em auto; */
+footer img{
+  width: 120px;
+  height: auto;
+  margin: 1.5em;
 }
 
-footer{
-  margin-bottom: 4em;
+@media only screen and (max-width: 992px) {
+  footer .col-lg-3 {
+    margin-top: 1.5em;
+  }
 }
+
 
 /* Links
 ========================================== */
@@ -63,9 +63,25 @@ footer{
   background: #000;
 }
 
+a{
+  color: #FF4081;
+}
+
+a:hover {
+    color: #C2185B;
+}
 
 /* Typography and spacing
 ========================================== */
+
+h1, h2, h3, h4 {
+  font-family: Georgia, serif;
+  font-weight: 500;
+}
+
+.text-muted {
+    color: #9E9E9E!important;
+}
 
 @media only screen and (max-width: 992px) {
   .answerating h2, .addspeaker h2, .moodslider h2, .payme h2 {
