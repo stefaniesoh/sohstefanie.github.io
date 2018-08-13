@@ -6,12 +6,12 @@ main{
 }
 
 summary{
-  margin: 8em auto;
+  margin: 4em auto;
 }
 
 section{
   margin: 4em auto;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 section:first-child{
