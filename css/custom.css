@@ -71,7 +71,7 @@ summary figure{
 }
 
 .about-and-contact-wrapper img{
-	max-height: 250px;
+	max-height: 80px;
 	width: auto;
 }
 
@@ -305,10 +305,6 @@ a.arrow.bounce:hover{
 	width: 100%;
 	margin: 1em;
 	text-align: right;
-}
-
-.btn{
-
 }
 
 .btn-primary{

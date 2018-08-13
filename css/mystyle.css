@@ -1,0 +1,74 @@
+/* Layout
+========================================== */
+
+main{
+  /* background: #F5F5F5; */
+}
+
+summary{
+  margin: 8em auto;
+}
+
+section{
+  margin: 4em auto;
+  min-height: 100vh;
+}
+
+section:first-child{
+  padding-top: 8em;
+}
+
+section:last-child{
+  margin-bottom: 0;
+}
+
+.older-works{
+  /* margin: 5em auto; */
+}
+
+footer{
+  margin-bottom: 4em;
+}
+
+/* Links
+========================================== */
+.nav .nav-link{
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  margin: 0 10px;
+  text-align: right;
+}
+
+.nav a{
+  color: #666;
+}
+
+.nav-link:focus, .nav-link:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav a:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.nav a:hover:after {
+  width: 100%;
+  background: #000;
+}
+
+
+/* Typography and spacing
+========================================== */
+
+@media only screen and (max-width: 992px) {
+  .answerating h2, .addspeaker h2, .moodslider h2, .payme h2 {
+    margin-top: 1.5rem;
+  }
+}
